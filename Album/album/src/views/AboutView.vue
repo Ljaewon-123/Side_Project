@@ -2,7 +2,7 @@
   <div>
     <h2>about View</h2>
 
-    <RouterLink to="/test">이동</RouterLink>
+    <RouterLink to="/login">이동</RouterLink>
 
     <h3>현재 페이지 {{ router.path }}</h3>
 
