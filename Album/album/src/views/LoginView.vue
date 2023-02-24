@@ -81,5 +81,11 @@ import type { User } from '@/types/User'
 
   margin-top: 20px;
 }
-
+.example{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 100vh;
+  flex-direction: column;
+}
 </style>
