@@ -50,11 +50,11 @@ useClickOutside(mainSel, ()=>{
 const clickSelect = (name :string,index:number) => {
   if(selectTxt.value == name ) return
   selectTxt.value = name 
-  changeMethod(index)
+  changeMethod(index,name)
 }
 
-const changeMethod = (index:number) => {
-  emit("change",index);
+const changeMethod = (index:number, name:string) => {
+  emit("change",index,name);
 };
 
 const currentSelect = (name :string) => {

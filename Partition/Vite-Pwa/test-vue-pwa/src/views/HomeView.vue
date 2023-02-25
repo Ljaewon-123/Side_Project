@@ -9,7 +9,7 @@
     </div>
     <div class="sub">
       <div v-for="item, index in array" :key="index">
-        <input type="number" v-model="array![index].value" class="input-box" readonly>
+        <input type="number" v-model="array![index].value" class="input-box" maxlength="4" readonly>
         <span class="text">{{ array![index].name }}</span>
       </div>
     </div>
@@ -21,8 +21,12 @@
 import SelectBox from '@/components/SelectBox.vue';
 import { ref, watch } from 'vue';
 import type { ArrayItem } from '@/types'
+import { calculateUnit } from '@/composables/calculateUnit'
+
+// 한번 다운받았으면 다시 다운 안받아도 된다 
 
 const refVal = ref(0)
+const currentUnit = ref('')
 const array = ref<ArrayItem[]>()
 const basic = ref([
   {name:'ml', value:0},
@@ -36,32 +40,31 @@ const basic = ref([
   {name:'gallons', value:0}
 ])
 
-const test = () => { // 이제 여기다가 알맞는 식 써넣고 pwa하면 될듯
+const calculate = () => { // 
   if(array.value){
-    for(let i = 0; i < array.value.length; i++){
-      if(array.value[i].name == 'tsp') {
-        array.value[i].value = refVal.value * 10
-      }
-    }
+    calculateUnit(array.value,refVal.value, currentUnit.value)
   }
   
 }
 
-const changeEvent = (index:number) => {
-  setupLst(index)
-  test()
+const changeEvent = (index:number, name:string) => {
+  setupLst(index,name)
+  calculate()
 }
 
-const setupLst = (index?:number) => {
+const setupLst = (index?:number, name?:string) => {
   array.value = [...basic.value]
-  if(!index) array.value.splice(0,1)
-  else array.value.splice(index,1)
+  if(!index) array.value.splice(0,1), currentUnit.value = basic.value[0].name
+  else array.value.splice(index,1), currentUnit.value = name!
+
+  
 }
 setupLst()
 
-watch(()=>(refVal.value) ,(newVal,oldVal) => {  // 이거는 promise 객체일때 유효  지금은 유배
 
-  test()
+watch(()=>(refVal.value) ,(newVal,oldVal) => {  
+
+  calculate()
 
 
 },{deep: true,immediate:true})

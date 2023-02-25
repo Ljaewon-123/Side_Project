@@ -39,6 +39,9 @@
   "build":{
     "productName": "testElectron",
     "appId": "testElectron",
+    "win": {
+      "icon": "public/assets/logo.png"
+    },
     "files": [
       "dist",
       "dist-electron"
