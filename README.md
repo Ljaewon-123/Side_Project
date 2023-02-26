@@ -1,10 +1,8 @@
 # Side_Projec
 
+## Only Use Typescript
 
-
-## ONLY USE TYPESCRIPT
-
-
+> js 변환파일 ignore 안함...
 
 # side project 지침
 
