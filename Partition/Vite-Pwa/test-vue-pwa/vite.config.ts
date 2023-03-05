@@ -14,11 +14,12 @@ export default defineConfig({
         icons:[
           {
             src: "assets/images/logo.png",
-            sizes: "512x512",
+            sizes: "360x360",
             type:"image/png",
             purpose:"any maskable"
           },
-        ]
+        ],
+        description: "A simply readable Hacker News app.",
       },
       workbox: {
         runtimeCaching: [{
