@@ -46,9 +46,6 @@
       "icon": "public/assets/logo.png"
     },
     "linux":{
-      "target": [
-        "deb"
-      ],
       "icon": "public/assets/logo.png"
     },
     "files": [

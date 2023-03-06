@@ -18,7 +18,7 @@ function createWindow() {
     minWidth: 1200,
     minHeight: 550,
     autoHideMenuBar: true,
-    icon: path.join(process.env.PUBLIC!, 'assets/logo.png'),
+    icon: path.join(process.env.PUBLIC!, 'assets/icons/icon_256x256.png'),//path.join(process.env.PUBLIC!, 'assets/logo.png'),
     webPreferences: {
       contextIsolation: false,
       nodeIntegration: true,
