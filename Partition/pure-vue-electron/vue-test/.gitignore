@@ -22,6 +22,7 @@ pnpm-debug.log*
 *.sln
 *.sw?
 node_modules
+dist_electron
 
 #Electron-builder output
 /dist_electron

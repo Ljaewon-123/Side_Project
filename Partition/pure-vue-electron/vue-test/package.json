@@ -13,6 +13,7 @@
   },
   "main": "background.js",
   "dependencies": {
+    "pinia": "^2.0.32",
     "ts-loader": "~8.2.0",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"

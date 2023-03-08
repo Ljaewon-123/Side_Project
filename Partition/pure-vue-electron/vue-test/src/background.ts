@@ -21,7 +21,7 @@ async function createWindow() {
     minWidth: 1200,
     minHeight: 550,
     autoHideMenuBar: true,
-    icon: path.join(__dirname, '../src/assets/logo.png'),//path.join(process.env.PUBLIC!, 'assets/logo.png'),
+    icon: path.join(__dirname, '../src/assets/icons/icon.png'),
     webPreferences: {
       contextIsolation: !process.env.ELECTRON_NODE_INTEGRATION,
       nodeIntegration: true,
