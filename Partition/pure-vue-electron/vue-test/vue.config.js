@@ -14,11 +14,6 @@ module.exports = {
           icon: 'src/assets/logo.png',
         },
         linux: {
-          target:[
-            'deb',
-            'snap',
-            'AppImage'
-          ],
           icon: 'build/icons/icon.png'  // 해볼것 
         }
       },
