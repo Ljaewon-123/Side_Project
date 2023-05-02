@@ -14,7 +14,7 @@ module.exports = {
           icon: 'src/assets/logo.png',
         },
         linux: {
-          icon: 'build/icons/icon.png'  // 해볼것 
+          icon: 'src/assets/logo.png' // 'build/icons/icon.png'  해볼것 
         }
       },
     },

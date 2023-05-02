@@ -22,6 +22,7 @@ export default defineConfig({
         description: "A simply readable Hacker News app.",
       },
       workbox: {
+        swDest: './public/sw.js',
         runtimeCaching: [{
           urlPattern: ({ url }) => {
             return url.pathname.startsWith("/api");

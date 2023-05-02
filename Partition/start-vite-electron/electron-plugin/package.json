@@ -2,7 +2,7 @@
   "name": "electron-plugin",
   "version": "0.0.0",
   "homepage": "https://github.com/${user}/${project}",
-  "author": "Jaewon Lee <jaewon@naver.com>",
+  "author": "Bigtorage <Bigtorage@bigtorage.com>",
   "private": true,
   "main": "dist-electron/main.js",
   "scripts": {

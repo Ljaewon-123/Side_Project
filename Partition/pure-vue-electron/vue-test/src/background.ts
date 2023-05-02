@@ -11,21 +11,24 @@ protocol.registerSchemesAsPrivileged([
   { scheme: "app", privileges: { secure: true, standard: true } },
 ]);
 
-const preload = path.join(__dirname, '../src/preload.ts')
+const preload = path.join(__dirname, '../src/preload.js')
 
 async function createWindow() {
   // Create the browser window.
   const win = new BrowserWindow({
     width: 1920,
     height: 1080,
-    minWidth: 1200,
-    minHeight: 550,
+    minWidth: 1024,
+    minHeight: 600,
     autoHideMenuBar: true,
+    kiosk:true,
+    // fullscreen:true,
     icon: path.join(__dirname, '../src/assets/icons/icon.png'),
     webPreferences: {
       contextIsolation: !process.env.ELECTRON_NODE_INTEGRATION,
       nodeIntegration: true,
       enableRemoteModule: true,
+      // preload:'./preload.js'
     },
     
   });
