@@ -2,7 +2,7 @@
 
 ## Only Use Typescript
 
-> js 변환파일 ignore 안함...
+> js 변환파일 ignore 안함... => 함
 
 # side project 지침
 
