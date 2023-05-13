@@ -1,0 +1,16 @@
+{
+  "manifest_version": 1,
+  "name": "nineIndex",
+  "description": "More than 9 search portals",
+  "version": "1.0",
+  "icons":{
+    "32": "images/32.png"
+  },
+  "action":{
+    "default_icon": "images/32.png",
+    "default_title" : "nineIndex"
+  },
+  "chrome_url_overrides" : {
+    "newtab": "newTab/nineIndex.html"
+  }
+}
