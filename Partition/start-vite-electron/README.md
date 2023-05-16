@@ -10,9 +10,7 @@ add electron-plugin 은 사용하지 않고 다른방법으로 빌드했다
 
 성공!
 
-
-
-## vue-electron  ( 실수로 지움 )
+## vue-electron  ( 복구 )
 
 npm init부터 하나하나 직접 설정해가면 빌드했다
 
