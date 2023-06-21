@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <h1>Document</h1>
+
+  <div id="v-app">
+    <div>
+      <div v-for="item in array" >
+        <div>{{ item.message }}</div>
+        <div>{{ item.url }}</div>
+        method: {{ item?.get }} {{ item?.post }}
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+    const basicUrl =  'http://ServerURL/'
+
+    let app = new Vue({
+      el: "#v-app",
+      data:{
+        endpoint: '',
+        array: [
+          {
+            message: '현재 url',
+            url: basicUrl ,
+            get: 'GET',
+            post: 'POST'
+          },
+          {
+            message: 'api_key 인증을 안하는 test url',
+            url: basicUrl + 'test' ,
+            post: 'POST'
+          },
+        ]
+      }
+    })
+
+  </script>
+
+</body>
+</html>
