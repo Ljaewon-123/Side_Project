@@ -20,3 +20,9 @@ pug
 Pug는 템플릿 엔진으로, 웹 애플리케이션에서 동적인 HTML을 생성하기 위해 사용
 
 ws
+
+socket IO
+socketio는 websocket을 실행하는게 아니라 프레임워크임 
+실시간 , 양방향, event기반 통신 제공 websocket을 사용해서 탄력성이 더 뛰어남 
+websocket의 부가기능이 아님 websocket를 사용며 지원하지 않을시 다른 방법을 하용한다 
+http long poolling 같은것 연결이 끊겨도 재연결을 시도함 
