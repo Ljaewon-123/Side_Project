@@ -26,3 +26,8 @@ socketio는 websocket을 실행하는게 아니라 프레임워크임
 실시간 , 양방향, event기반 통신 제공 websocket을 사용해서 탄력성이 더 뛰어남 
 websocket의 부가기능이 아님 websocket를 사용며 지원하지 않을시 다른 방법을 하용한다 
 http long poolling 같은것 연결이 끊겨도 재연결을 시도함 
+
+
+adapter 분할된 서버간에 연결점 
+사용하지 않으면 in memory를 사용하게되고 서버마다 분리되어 
+공유할수가없음
