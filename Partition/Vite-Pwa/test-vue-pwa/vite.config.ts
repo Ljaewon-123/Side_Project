@@ -16,12 +16,21 @@ export default defineConfig({
             src: "assets/images/logo.png",
             sizes: "360x360",
             type:"image/png",
-            purpose:"any maskable"
+            
+          },
+          {
+            src: "assets/images/arrow.png",
+            type: "image/png",
+            sizes: "512x512",
+            
           },
         ],
+        display: "standalone",
+        scope: "/",
         description: "A simply readable Hacker News app.",
       },
       workbox: {
+        globPatterns: [ "**/*.{js,css,html,pdf}"],
         swDest: './public/sw.js',
         runtimeCaching: [{
           urlPattern: ({ url }) => {
@@ -36,6 +45,9 @@ export default defineConfig({
           }
         }]
       },
+      includeAssets: [
+        "**/*",
+      ],
       devOptions:{
         enabled: true
       }

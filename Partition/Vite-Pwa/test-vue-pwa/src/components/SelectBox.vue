@@ -123,7 +123,7 @@ const applyCssOnlyWidth = () => {
 /* 옵션 영역 스타일 */
 .selectbox-list{
   position: absolute;
-  padding: 1px 0px;
+  padding: 0px 0px;
   width: 200px;
   border-radius: 8px;
   border:1px solid #6ebae6;
@@ -131,6 +131,7 @@ const applyCssOnlyWidth = () => {
   color:black;
   cursor: pointer;
   z-index: 5;
+  margin-top: 3px;
 }
 .option{
   padding: 5px 10px;
