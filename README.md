@@ -2,7 +2,7 @@
 
 ---
 
-## Partition 폴더
+## Partition => varied_projects 폴더
 
 실수로 하나 더 만든 side_project 폴더 
 
